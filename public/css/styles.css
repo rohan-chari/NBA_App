@@ -8,5 +8,8 @@ body{
 .header{
     background-color: white;
     opacity: .75;
-    height:150px;
+    height:100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
