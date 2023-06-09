@@ -1,4 +1,12 @@
+html{
+    font-family: sans-serif;
+}
 body{
     background-image: url("../images/background.jpg");
     background-size: cover;
+}
+.header{
+    background-color: white;
+    opacity: .75;
+    height:150px;
 }
