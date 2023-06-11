@@ -20,7 +20,7 @@ body{
 }
 input{
     height:4rem;
-    width:700px;
+    width:600px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     outline: none;
@@ -34,5 +34,18 @@ input{
     border-bottom-right-radius: 20px;
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
-    width:100px;
+    width:125px;
+}
+.results-container{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 5rem;
+    flex-wrap: wrap;
+}
+.player-card{
+    background-color: white;
+    border-radius: 10px;
+    width:400px;
+    margin: 30px 50px 0 50px;
 }
