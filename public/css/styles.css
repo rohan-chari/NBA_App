@@ -13,3 +13,26 @@ body{
     justify-content: center;
     align-items: center;
 }
+.player-search{
+   margin-top: 10rem;
+   display: flex;
+   justify-content: center;
+}
+input{
+    height:4rem;
+    width:700px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    outline: none;
+    border-color: white;
+    font-size: large;
+    padding-left: 1rem;
+}
+.btn{
+    height:4rem;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    width:100px;
+}
