@@ -5,6 +5,9 @@ body{
     background-image: url("../images/background.jpg");
     background-size: cover;
 }
+form{
+    display: flex;
+}
 .header{
     background-color: white;
     opacity: .75;
@@ -23,7 +26,7 @@ input{
     width:600px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
-    outline: none;
+    outline-color: gray;
     border-color: white;
     font-size: large;
     padding-left: 1rem;
@@ -35,6 +38,8 @@ input{
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
     width:125px;
+    margin-left:-5px;
+    margin-bottom: 5px;
 }
 .results-container{
     display:flex;
@@ -48,4 +53,20 @@ input{
     border-radius: 10px;
     width:400px;
     margin: 30px 50px 0 50px;
+}
+.reset-button{
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+    margin-left: 3rem;
+}
+#year{
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    width:200px;
+    outline-color: grey;
+    border-color: none;
 }

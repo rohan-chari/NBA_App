@@ -17,15 +17,20 @@
     <div class="player-search">
         <form action="/" method="POST">
             <input type="text" name="playerSearch" id="" placeholder="Enter an nba player">
+            <input type="text" name="yearSearch" id="year" placeholder="Year">
+            <button type="button" onclick="window.location.href='/reset'" class="btn btn-primary reset-button">Clear List</button>
+            <button type="submit" class="btn btn-success">Add Player</button>
         </form>
-        <button type="button" class="btn btn-success">Add Player</button>
+        
     </div>
     <div class="results-container">
-        <% inputList.forEach(player => { %>
+        <% for(let i = 0; i < playerList.length; i++) { %>
             <div class="player-card">
-                <h2>Name: <%= player %></h2>
+                <h2>Player Name: <%= playerList[i] %></h2>
+                <p>Year: <%= yearList[i] %></p>
             </div>
-        <% }); %>
+        <% }; %>
+        
     </div>
 </body>
 </html>
