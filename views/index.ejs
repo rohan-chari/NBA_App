@@ -24,10 +24,15 @@
         
     </div>
     <div class="results-container">
-        <% for(let i = 0; i < playerList.length; i++) { %>
+        <% for(let i = 0; i < playerObjectList.length; i++) { %>
             <div class="player-card">
-                <h2>Player Name: <%= playerList[i] %></h2>
-                <p>Year: <%= yearList[i] %></p>
+                <h2>Name: <%= playerObjectList[i].full_name %></h2>
+                <p>Team: <%= playerObjectList[i].current_team %></p>
+                <p>Height: <%= playerObjectList[i].height %></p>
+                <p>Weight: <%= playerObjectList[i].weight %></p>
+                <p>Selected Year: <%= playerObjectList[i].year_selected %></p>
+                <p>Stats: <%= JSON.stringify(playerObjectList[i].stats, null, 2) %></p>
+                <!-- You can add more properties if you want -->
             </div>
         <% }; %>
         
